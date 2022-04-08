@@ -74,3 +74,77 @@ body{
     background-color: #fff;
     transform: rotate(-40deg);
 }
+.car__bulb--back{
+    transform: rotate(35deg);
+    top: 14%;
+    left: 2%;
+    background-color: #d14022;
+}
+.car__center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10vmin;
+    height: 2vmin;
+    border-radius: 2vmin;
+    background-color: #fff;
+}
+.car__wheels{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -9vmin;
+    position: relative;
+    z-index: 200;
+}
+.car__wheel{
+    --r:18vmin;
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    border: 1.8vmin solid #323232;
+    background-color: #fff;
+    position: relative;
+    animation: run .5s 1s linear infinite;
+}
+.wheel__circle{
+    --r:2.4vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: var(--r);
+    height: var(--r);
+    border-radius: 50%;
+    background-color: #323232;
+}
+.wheel__rect--1{
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%,-50%) rotate(-40deg);
+}
+.wheel__rect--2{
+    top: 30%;
+    left: 64%;
+    transform: translate(-50%,-50%) rotate(35deg);
+}
+.wheel__rect--3{
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+}
+.wheel__rect--4{
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%) rotate(90deg);
+}
+.wheel__rect--5{
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%,-50%) rotate(-145deg);
+}
+.wheel__rect--6{
+    top: 70%;
+    left: 64%;
+    transform: translate(-50%,-50%) rotate(146deg);
+}
